@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Projects from './Projects';
 
 class App extends Component {    
 
@@ -23,7 +24,7 @@ class App extends Component {
     //     this.setState({ displayBio: !this.state.displayBio });
     // }
 
-    state = { displayBio: false }; // This will be equivalent to the constructor, no need for the bind anymore
+    state = { displayBio: false }; // This will be equivalent to the constructor,  no need for the bind anymore
 
     toggleBioDisplay = () => {
         this.setState({ displayBio: !this.state.displayBio });
@@ -50,6 +51,8 @@ class App extends Component {
                     </div>
                     )
                 }
+                <hr />
+                <Projects />
             </div>
         )
     }
